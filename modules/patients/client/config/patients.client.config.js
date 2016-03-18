@@ -2,29 +2,29 @@
   'use strict';
 
   angular
-    .module('articles')
+    .module('patients')
     .run(menuConfig);
 
   menuConfig.$inject = ['Menus'];
 
   function menuConfig(Menus) {
     Menus.addMenuItem('topbar', {
-      title: 'Articles',
-      state: 'articles',
+      title: 'Patients',
+      state: 'patients',
       type: 'dropdown',
       roles: ['*']
     });
 
     // Add the dropdown list item
-    Menus.addSubMenuItem('topbar', 'articles', {
-      title: 'List Articles',
-      state: 'articles.list'
+    Menus.addSubMenuItem('topbar', 'patients', {
+      title: 'List Patients',
+      state: 'patients.list'
     });
 
     // Add the dropdown create item
-    Menus.addSubMenuItem('topbar', 'articles', {
-      title: 'Create Article',
-      state: 'articles.create',
+    Menus.addSubMenuItem('topbar', 'patients', {
+      title: 'Create Patient',
+      state: 'patients.create',
       roles: ['user']
     });
   }
