@@ -6,6 +6,8 @@ angular.module('page.addPatient')
 		
 	$stateProvider.state('addPatient', {
     	url: "/addPatient",
-    	templateUrl: 'page.addPatient/view.html'
+    	templateUrl: 'page.addPatient/view.html',
+		controller : "addPatientController",
+		controllerAs : "addPatientController"
     });
 }]);
