@@ -1,8 +1,47 @@
 <ui-main-component-title-bar></ui-main-component-title-bar>
 
 <h3>Nouvelle fiche suivi</h3>
-<form name="ficheSuiviForm" ng-submit="ficheSuiviForm.$valid && doFicheSuiviCreation()"
-      novalidate>
+<form name="ficheSuiviForm" ng-submit="ficheSuiviForm.$valid && doFicheSuiviCreation()" novalidate>
 
+    <div class="form-group">
+        <label for="state">Etat des lieux</label>
+        <textarea class="form-control"
+                  ng-model="suivi.state"
+                  rows="5"
+                  id="state"></textarea>
+    </div>
+
+    <div class="form-group">
+        <labelCritères de suivi en rééducation</label>
+
+        <a class="btn btn-default" href="#" role="button" ng-click="addCriteria()">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Ajouter un critère
+        </a>
+
+        <div ng-repeat="criteria in criterias">
+            <select class="form-control" ng-model="criteria.type">
+                <option value="Douleur">Douleur</option>
+                <option value="Mobilité">Mobitilité</option>
+                <option value="Amplitude">Amplitude</option>
+            </select>
+
+            <select class="form-control" ng-model="criteria.level">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="exercices">Exercices</label>
+        <textarea class="form-control"
+                  ng-model="suivi.exercices"
+                  rows="5"
+                  id="exercices"></textarea>
+    </div>
 </form>
 
