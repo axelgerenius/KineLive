@@ -96,7 +96,7 @@
 /* The side navigation menu */
 .sidenav {
     display: block;
-    position: absolute;
+    position: fixed;
     height: 100%; /* 100% Full-height */
     width: 250px; /* 0 width - change this with JavaScript */
     z-index: 2; /* Stay on top */
