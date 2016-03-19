@@ -1,1 +1,47 @@
 <ui-main-component-home-title-bar></ui-main-component-home-title-bar>
+
+<style>
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+    
+.top-buffer { margin-bottom:0px; }
+</style>
+
+<body>
+    <div role="main">
+        <div class="container" style="margin-top:170px">
+            <div class="row no-gutter">
+                <div class="col-xs-6 col-md-3 ">
+                    <a href="#" class="thumbnail top-buffer">
+                      <img src="icone/patient.jpg" alt="Patients">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail top-buffer">
+                      <img src="icone/communication.jpg" alt="Communication">
+                    </a>
+                </div>
+            </div>
+            <div class="row no-gutter">
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img src="icone/anatomie.jpg" alt="Anatomie 3D">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img src="icone/videos.jpg" alt="Vidéos d'exercices">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
