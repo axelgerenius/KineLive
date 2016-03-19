@@ -1,4 +1,5 @@
 <ui-main-component-title-bar></ui-main-component-title-bar>
+<ui-main-component-tab-bar-form></ui-main-component-tab-bar-form>
 
 <h3>Nouvelle fiche suivi</h3>
 <form name="ficheSuiviForm" ng-submit="ficheSuiviForm.$valid && doFicheSuiviCreation()" novalidate>
@@ -20,9 +21,9 @@
 
         <div ng-repeat="criteria in criterias">
             <select class="form-control" ng-model="criteria.type">
-                <option value="Douleur">Douleur</option>
-                <option value="Mobilité">Mobitilité</option>
                 <option value="Amplitude">Amplitude</option>
+                <option value="Douleur">Douleur</option>
+                <option value="Mobilité">Mobilité</option>
             </select>
 
             <select class="form-control" ng-model="criteria.level">
@@ -41,7 +42,8 @@
         <textarea class="form-control"
                   ng-model="suivi.exercices"
                   rows="5"
-                  id="exercices"></textarea>
+                  id="exercices"
+                  placeholder="Type, fréquence, série, nombre de répétitions"></textarea>
     </div>
 </form>
 
