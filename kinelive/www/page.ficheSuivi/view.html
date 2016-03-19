@@ -40,15 +40,15 @@
                 <div style="float:left; width:70%;">
                     <rzslider rz-slider-model="criteria.level" rz-slider-options="slider_ticks_values.options"></rzslider>
                 </div>
-                <div style="float:right; width:30%;">
-                    <button uib-popover="I appeared on mouse enter!" popover-trigger="mouseenter" type="button" class="btn btn-default">Mouseenter</button>
-                </div>
-
-                <div>
-                    <img src="icone/communication.jpg" class="img-rounded" width="304" height="236">
-                </div>
             </div>
-            
+        </div>
+
+        <a class="btn btn-default" href="#" role="button" ng-click="displayImage()">
+            <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+        </a>
+
+        <div ng-show="{{ showImage }}">
+            <img src="image/graphique.png" class="img-responsive">
         </div>
     </div>
 

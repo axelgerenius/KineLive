@@ -3,6 +3,11 @@ angular.module('page.ficheSuivi').controller('ficheSuiviController', ['$scope', 
 
     $scope.criterias = [{type:'Douleur', level: '0'}, {type:'Mobilité', level: '0'}];
     $scope.exercices = [{}];
+    $scope.showImage = true;
+
+    $scope.displayImage = function() {
+        $scope.showImage = false;
+    };
 
     $scope.addCriteria = function() {
         $scope.criterias.push({});
