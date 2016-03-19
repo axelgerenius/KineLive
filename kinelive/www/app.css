@@ -170,6 +170,7 @@
 
 /* TITLE BAR */
 #titleBar {
+  z-index : 1;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -184,6 +185,7 @@
 
 /* HOME TITLE BAR */
 #homeTitleBar {
+  z-index : 1;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -198,6 +200,7 @@
 
 /* TAB BAR */
 #tabBar {
+  z-index : 1;
   margin: 0;
   padding: 0;
   overflow: hidden;

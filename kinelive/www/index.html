@@ -5,9 +5,8 @@
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 	
 	<title></title>
-	
-	<link href="lib/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet" />
 	<link href="lib/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="lib/bootstrap-3.3.5-dist/css/Supernice.min.css" rel="stylesheet" />
 	<link href="lib/loading.css" rel="stylesheet" />
 	<link href="app.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="lib/angularjs-slider-master/dist/rzslider.css"/>
@@ -119,9 +118,9 @@
     
 
 </head>
-<body ng-app="kinelive" ng-controller="involveIonicController as involveIonicController" ng-swipe-right="closeMenu()">
+<body ng-app="kinelive" ng-controller="involveIonicController as involveIonicController" ng-swipe-left="closeMenu()" ng-swipe-right="openMenu()">
 
-<div id="mainContent" ng-swipe-right="openMenu()">
+<div id="mainContent">
 	<ui-view></ui-view>
 </div>
 <ui-main-component-menu></ui-main-component-menu>

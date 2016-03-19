@@ -5,7 +5,7 @@ angular.module('service.patientService', []).factory('patientService', [function
 				"id" : 1,
 				"firstname" : "Mike",
 				"lastname" : "Portnoy",
-				"pathology" : "Arthrose",
+				"pathology" : "Lombalgie",
 				"goal" : "pouvoir à nouveau jouer de la batterie.",
 				"email" : "mikep@yahoo.fr",
 				"photo" : "http://bootdey.com/img/Content/user_1.jpg",
