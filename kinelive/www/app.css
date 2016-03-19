@@ -236,6 +236,43 @@
   background-color: #115F70;
 }
 
+.title {
+  margin-left: 0;
+  color: #1D9FBB;
+}
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* resize images */
+.thumbnail img {
+    width: 50%;
+    height: auto;
+    padding: 35px 10px 10px 10px;
+}
+.thumbnail .video{
+   margin-left: 40px;
+}
+.thumbnail .anatomie{
+    margin-left: 45px;
+}
+.thumbnail .communication{
+    margin-left: 45px;
+}
+.thumbnail .patients{
+    margin-left: 63px;
+}
+
+
+.top-buffer { margin-bottom:0px; }
+
 @font-face {
     font-family: "roboto";
     src: url('lib/RobotoTTF/Roboto-Regular.ttf');
