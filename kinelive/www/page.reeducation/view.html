@@ -18,6 +18,9 @@
 		{{ patient.goal }}
 	</div>
 </div>
+
+
+
 <div class="panel panel-default">
 	<div class="panel-heading">
 		<h3 class="panel-title">Traitement</h3>
@@ -35,7 +38,24 @@
 </div>
 
 <div class="floatingButtonBar">
-	<a class="btn btn-default" href="#/profile/{{patient.id}}" role="button">
- 		<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Ajouter
-	</a>
+
+	<span class="dropup" uib-dropdown on-toggle="toggled(open)">
+		<a href id="simple-dropdown">
+			<h3 style="margin-left : 170px; text-align : right"><span class="glyphicon glyphicon-plus" aria-hidden="true" uib-dropdown-toggle></span></h3>
+		</a>
+		<ul uib-dropdown-menu aria-labelledby="simple-dropdown">
+			<li>
+				<a href>BDK</a>
+			</li>
+			<li>
+				<a href>Bilan intermédiaire</a>
+			</li>
+			<li>
+				<a href>Bilan de sortie</a>
+			</li>
+			<li>
+				<a href>Fiche de suivi</a>
+			</li>
+		</ul>
+	</span>
 </div>
