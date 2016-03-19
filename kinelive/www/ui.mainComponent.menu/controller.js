@@ -50,6 +50,7 @@ angular.module('ui.mainComponent.menu')
 	};
 
 	$scope.goToPatientList = function() {
+		$scope.closeMenu();
 		$location.path("/patientList");
 	};
 }]);
