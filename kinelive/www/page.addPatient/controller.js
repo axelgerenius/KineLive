@@ -1,7 +1,8 @@
 
-angular.module('page.addPatient').controller('addPatientController', ['$scope', function($scope) {
+angular.module('page.addPatient').controller('addPatientController', ['$scope', 'patientService',
+    function($scope, patientService) {
 
     $scope.doPatientCreation = function() {
-        console.log($scope.patient);
+        patientService.add($scope.patient);
     };
 }]);

@@ -48,4 +48,8 @@ angular.module('ui.mainComponent.menu')
 		$scope.closeMenu();
 		$location.path('/addPatient');
 	};
+
+	$scope.goToPatientList = function() {
+		$location.path("/patientList");
+	};
 }]);

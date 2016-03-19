@@ -25,9 +25,4 @@ angular.module('ui.mainComponent.tabBar')
 	$scope.goToCalendar = function() {
 		$location.path("/calendar");
 	};
-
-	$scope.goToPatientList = function() {
-		$location.path("/patientList");
-	};
-
 }]);
