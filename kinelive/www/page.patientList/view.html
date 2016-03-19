@@ -1,14 +1,19 @@
 <ui-main-component-title-bar></ui-main-component-title-bar>
 
-<h3>Liste des patients</h3>
+<h3></h3>
 
 <div ng-init="initPatients()"></div>
 
-<label>Rechercher: <input ng-model="searchText"></label>
+<!--<label>Rechercher: <input ng-model="searchText"></label>
 
-<a class="btn btn-default" href="#/addPatient" role="button">
+<a class="btn btn-default" role="button">
 	<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Ajouter un patient
-</a>
+</a>-->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Liste des patients</h3>
+    </div>
+    <div class="panel-body">
 
 <div class="container bootstrap snippet">
     <div class="row">
@@ -36,5 +41,26 @@
             </div>
         </div>
     </div>
+</div>
+    </div>
+</div>
+<div class="floatingButtonBar">
+
+	<span class="dropup" uib-dropdown on-toggle="toggled(open)">
+		<a href id="simple-dropdown">
+            <h3 style="margin-left : 170px; text-align : right"><span class="glyphicon glyphicon-plus" aria-hidden="true" uib-dropdown-toggle></span></h3>
+        </a>
+		<ul uib-dropdown-menu aria-labelledby="simple-dropdown">
+            <li>
+                <a href="#/addPatient">Créer un patient</a>
+            </li>
+            <li>
+                <a href>Archiver</a>
+            </li>
+            <li>
+                <a href>Supprimer</a>
+            </li>
+        </ul>
+	</span>
 </div>
 
