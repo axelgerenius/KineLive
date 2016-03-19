@@ -53,4 +53,9 @@ angular.module('ui.mainComponent.menu')
 		$scope.closeMenu();
 		$location.path("/patientList");
 	};
+
+	$scope.goToHome = function() {
+		$scope.closeMenu();
+		$location.path("/home");
+	};
 }]);
