@@ -1,8 +1,8 @@
 
 angular.module('page.home')
 
-.controller('pageHomeController', ['$scope',
-		function($scope){
+.controller('pageHomeController', ['$scope', 'patientService',
+		function($scope, patientService){
 	
 	
 	$scope.init = function() {

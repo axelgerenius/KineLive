@@ -14,7 +14,8 @@ angular.module('kinelive', ['ui.router',
 	'page.login',
 	'page.registration',
 	'page.addEvent',
-	'page.addPatient'])
+	'page.addPatient',
+	'service.patientService'])
 
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
