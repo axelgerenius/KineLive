@@ -1,64 +1,65 @@
 <ui-main-component-title-bar></ui-main-component-title-bar>
 <ui-main-component-tab-bar-patient></ui-main-component-tab-bar-patient>
 
-        <div class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title">Profil de {{patient.lastname}} {{patient.firstname}}</h3>
-    </div>
+<div class="panel panel-default">
     <div class="panel-body">
+        <div class="col-xs-12"
+            <img src="image/photo-profil.jpg" class="photo-patient-large img-responsive">
+        </div>
 
-        <div class="radio">
-            <label>
-                <input type="radio" name="Homme" ng-model="patient.gender" ng-value="'M'" />
-                Homme
-            </label>
-        </div>
-        <div class="radio">
-            <label>
-                <input type="radio" name="Femme" ng-model="patient.gender" ng-value="'F'" />
-                Femme
-            </label>
-        </div>
-        
+        <h4 class="title">Sexe</h4>
+        <input type="text" class="form-control" value="Homme" ng-show="patient.gender === 'M'"/>
+        <input type="text" class="form-control" value="Femme" ng-show="patient.gender === 'F'"/>
+
+        <h4 class="title">Nom</h4>
+        <input type="text" class="form-control" value="{{ patient.lastname }}"/>
+
+        <h4 class="title">Prénom</h4>
+        <input type="text" class="form-control" value="{{ patient.firstname }}"/>
+
         <h4 class="title">Né le</h4>
-        <input type="text" class="form-control" value="{{ patient.birthdate }}" />
+        <input type="text" class="form-control" value="{{ patient.birthdate }}"/>
 
         <h4 class="title">Email</h4>
-        <input type="text" class="form-control" value="{{ patient.email }}" />
+        <input type="text" class="form-control" value="{{ patient.email }}"/>
 
         <h4 class="title">Telephone</h4>
-        <input type="text" class="form-control" value="{{ patient.phone }}" />
+        <input type="text" class="form-control" value="{{ patient.phone }}"/>
 
         <h4 class="title">Adresse</h4>
-        <input type="text" class="form-control" value="{{ patient.adress }}" />
+        <input type="text" class="form-control" value="{{ patient.adress }}"/>
 
-        <h4 class="title">Adresse</h4>
-        <textarea ng-model="patient.context"
-                  type="text"
-                  class="form-control"
-                  rows="4"></textarea>
+        <div>
+            <h4 class="title">Adresse</h4>
+            <textarea ng-model="patient.context"
+                      type="text"
+                      class="form-control"
+                      rows="4"></textarea>
+        </div>
 
-        <h4 class="title">Anamnèse</h4>
-        <textarea ng-model="patient.anamnese"
-                  type="text"
-                  class="form-control"
-                  rows="4"></textarea>
+        <div>
+            <h4 class="title">Anamnèse</h4>
+            <textarea ng-model="patient.anamnese"
+                      type="text"
+                      class="form-control"
+                      rows="4"></textarea>
+        </div>
 
         <div class="container">
             <div class="row">
                 <div class="col-xs-3">
                     <a href="#" class="thumbnail">
-                        <img src="icone/irm.jpg" alt="125x125">
+                        <img src="icone/irm.jpg" alt="125x125" class="img-responsive">
                     </a>
                 </div>
                 <div class="col-xs-3">
                     <a href="#" class="thumbnail">
-                        <img src="icone/radio.jpg" alt="125x125">
+                        <img src="icone/radio.jpg" alt="125x125" class="img-responsive">
                     </a>
                 </div>
                 <div class="col-xs-3">
                     <a href="#" class="thumbnail">
-                        <img src="125x125.jpg" alt="125x125">
+                        <img src="125x125.jpg" alt="125x125" class="img-responsive">
                     </a>
                 </div>
             </div>
