@@ -23,7 +23,8 @@ angular.module('kinelive', ['ui.router',
 	'page.ficheSuivi',
 	'page.reeducation',
     'rzModule',
-    'ui.bootstrap'])
+    'ui.bootstrap',
+	'ui.mainComponent.tabBarNewProfil'])
 
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
