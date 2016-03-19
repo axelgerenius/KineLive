@@ -310,4 +310,12 @@
     font-size: 16px;
 }
 
+.container-radios {
+    margin-top:20px;
+}
+
+.img-radio {
+    transform: scale(2,2);
+}
+
 
