@@ -20,8 +20,13 @@ angular.module('ui.mainComponent.menu')
 	$scope.closeMenu = function() {
 		document.getElementById("mainSidenav").style.width = "0";
 		document.getElementById("mainContent").style.marginLeft = "0";
-		document.getElementById("titleBar").style.marginLeft = "0";
-		document.getElementById("tabBar").style.marginLeft = "0";
+		if (document.getElementById("titleBar")) {
+			document.getElementById("titleBar").style.marginLeft = "0";
+			document.getElementById("tabBar").style.marginLeft = "0";
+		}
+		if (document.getElementById("homeTitleBar")) {
+			document.getElementById("homeTitleBar").style.marginLeft = "0";
+		}
 	};
 	
 	$scope.goToLogin = function() {

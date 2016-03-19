@@ -77,14 +77,24 @@ angular.module('kinelive', ['ui.router',
 	$scope.openMenu = function() {
 		document.getElementById("mainSidenav").style.width = "250px";
 		document.getElementById("mainContent").style.marginLeft = "250px";
-		document.getElementById("titleBar").style.marginLeft = "250px";
-		document.getElementById("tabBar").style.marginLeft = "250px";
+		if (document.getElementById("titleBar")) {
+			document.getElementById("titleBar").style.marginLeft = "250px";
+			document.getElementById("tabBar").style.marginLeft = "250px";
+		}
+		if (document.getElementById("homeTitleBar")) {
+			document.getElementById("homeTitleBar").style.marginLeft = "250px";
+		}
 	};
 
 	$scope.closeMenu = function() {
 		document.getElementById("mainSidenav").style.width = "0px";
 		document.getElementById("mainContent").style.marginLeft = "0px";
-		document.getElementById("titleBar").style.marginLeft = "0px";
-		document.getElementById("tabBar").style.marginLeft = "0px";
+		if (document.getElementById("titleBar")) {
+			document.getElementById("titleBar").style.marginLeft = "0";
+			document.getElementById("tabBar").style.marginLeft = "0";
+		}
+		if (document.getElementById("homeTitleBar")) {
+			document.getElementById("homeTitleBar").style.marginLeft = "0";
+		}
 	};
 }]);

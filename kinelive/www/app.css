@@ -151,6 +151,20 @@
   transition: margin-left .5s;
 }
 
+/* HOME TITLE BAR */
+#homeTitleBar {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 160px;
+  float: left;
+  position : fixed;
+  left : 0px;
+  top : 0px;
+  width : 100%;
+  transition: margin-left .5s;
+}
+
 /* TAB BAR */
 #tabBar {
   margin: 0;
