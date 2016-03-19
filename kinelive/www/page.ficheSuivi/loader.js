@@ -1,2 +1,2 @@
 
-angular.module('page.ficheSuivi', []);
+angular.module('page.ficheSuivi', ['popup.painGraph']);

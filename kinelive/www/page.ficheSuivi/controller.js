@@ -1,12 +1,12 @@
 
-angular.module('page.ficheSuivi').controller('ficheSuiviController', ['$scope', '$location', function($scope, $location) {
+angular.module('page.ficheSuivi').controller('ficheSuiviController', ['$scope', '$location', 'popupPainGraphService',
+    function($scope, $location, popupPainGraphService) {
 
     $scope.criterias = [{type:'Douleur', level: '0'}, {type:'Mobilité', level: '0'}];
     $scope.exercices = [{}];
-    $scope.showImage = false;
 
     $scope.toggleImage = function() {
-        $scope.showImage = !$scope.showImage;
+        popupPainGraphService.openPopup();
     };
 
     $scope.addCriteria = function() {

@@ -1,30 +1,16 @@
 <ui-main-component-title-bar></ui-main-component-title-bar>
 <ui-main-component-tab-bar-patient></ui-main-component-tab-bar-patient>
 
-<div class="panel panel-default">
-	<div class="panel-heading">
-		<h3 class="panel-title">Pathologie</h3>
-	</div>
-	<div class="panel-body">
-		{{ patient.pathology }}
-	</div>
-</div>
-<div class="panel panel-default">
-	<div class="panel-heading">
-		<h3 class="panel-title">Objectif du patient</h3>
-	</div>
-	<div class="panel-body">
-		{{ patient.goal }}
-	</div>
-</div>
-
-
 
 <div class="panel panel-default">
-	<div class="panel-heading">
-		<h3 class="panel-title">Traitement</h3>
-	</div>
 	<div class="panel-body">
+		<h4 class="title">Pathologie</h4>
+		<input type="text" class="form-control" value="{{ patient.pathology }}" />
+
+		<h4 class="title">Objectif du patient</h4>
+		<input type="text" class="form-control" value="{{ patient.goal }}" />
+		<hr>
+		<h4 class="title-grey">Traitement</h4>
 		<table class="table">
 			<tr ng-repeat="seance in patient.seanceList">
 				<td>N° {{ seance.numero }}</td>
