@@ -1,14 +1,22 @@
 <div id="tabBar" class="bg-primary bg-primary-dark">
-	<div class="row">
 
-		<a ng-click="cancel()">
-			<span class="glyphicon glyphicon-remove bg-primary bg-primary-dark" aria-hidden="true"></span>
-		</a>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"><a class="bg-primary bg-primary-dark" ng-click="cancel()">
+				<span class="glyphicon glyphicon-remove bg-info" aria-hidden="true"></span>
+			</a></div>
 
-		Nouvelle fiche suivi
+			<div class="col-md-6 text-center">
+				Nouvelle fiche suivi
+			</div>
 
-		<a ng-click="validate()">
-			<span class="glyphicon glyphicon-ok bg-primary bg-primary-dark" aria-hidden="true"></span>
-		</a>
+			<div class="col-md-3">
+				<span class="pull-right">
+					<a class="bg-primary" ng-click="validate()">
+						<span class="glyphicon glyphicon-ok bg-primary bg-primary-dark" aria-hidden="true"></span>
+					</a>
+				</span>
+			</div>
+		</div>
 	</div>
 </div>
