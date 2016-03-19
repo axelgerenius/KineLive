@@ -45,5 +45,13 @@
                   id="exercices"
                   placeholder="Type, fréquence, série, nombre de répétitions"></textarea>
     </div>
+
+<form name="ficheSuiviForm" ng-submit="ficheSuiviForm.$valid && doFicheSuiviCreation()"
+      novalidate>
+<rzslider rz-slider-model="minSlider.value" rz-slider-options="slider_ticks_values.options"></rzslider>  <!--On récupère la value avec ng-model="minSlider.value"-->
+
 </form>
+
+
+
 
