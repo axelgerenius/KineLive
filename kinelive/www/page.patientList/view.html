@@ -2,11 +2,7 @@
 
 <h3>Liste des patients</h3>
 
-<div ng-init="patients = [{firstname:'John', lastname:'Rambo'},
-                         {firstname:'Mary', lastname:'Poppins'},
-                         {firstname:'Mike', lastname:'Tyzon'},
-                         {firstname:'Adam', lastname:'Eve'},
-                         {firstname:'Juliette', lastname:'Romeo'}]"></div>
+<div ng-init="initPatients()"></div>
 
 <label>Rechercher: <input ng-model="searchText"></label>
 <div class="list-group">

@@ -39,7 +39,7 @@ angular.module('service.patientService', [])
 		},
 
 		add : function(patient) {
-			patientList.push(patient);
+			this.patientList.push(patient);
 		}
 	};
 }]);
