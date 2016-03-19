@@ -13,7 +13,13 @@ angular.module('service.patientService', []).factory('patientService', [function
 				"phone" : "0600000000",
 				"adress" : "California",
 				"context" : "Joueur de batterie amateur.",
-				"anamnese" : ""
+				"anamnese" : "",
+				"criteriaList" : [
+					{
+						"name" : "douleur",
+						"values" : [9, 8, 7, 7, 5, 4, 2]
+					}
+				]
 
 			},
 			{
@@ -28,7 +34,13 @@ angular.module('service.patientService', []).factory('patientService', [function
 				"phone" : "0600000000",
 				"adress" : "California",
 				"context" : "Chanteur à ses heures perdues",
-				"anamnese" : ""
+				"anamnese" : "",
+				"criteriaList" : [
+					{
+						"name" : "douleur",
+						"values" : [9, 8, 7, 9, 6, 4, 1]
+					}
+				]
 			},
 			{
 				"id" : 3,
@@ -42,7 +54,17 @@ angular.module('service.patientService', []).factory('patientService', [function
 				"phone" : "0600000000",
 				"adress" : "California",
 				"context" : "Guitariste du dimanche",
-				"anamnese" : ""
+				"anamnese" : "",
+				"criteriaList" : [
+					{
+						"name" : "angle",
+						"values" : [10, 30, 35, 45, 60, 70]
+					},
+					{
+						"name" : "douleur",
+						"values" : [9, 8, 8, 5, 4, 4]
+					}
+				]
 			},
 			{
 				"id" : 4,
@@ -56,7 +78,13 @@ angular.module('service.patientService', []).factory('patientService', [function
 				"phone" : "0600000000",
 				"adress" : "California",
 				"context" : "Bassiste débutant",
-				"anamnese" : ""
+				"anamnese" : "",
+				"criteriaList" : [
+					{
+						"name" : "douleur",
+						"values" : [9, 8, 8, 5, 4, 4]
+					}
+				]
 			}
 		],
 
