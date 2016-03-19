@@ -5,13 +5,14 @@
 <h3>Nouvelle fiche suivi</h3>
 <form name="ficheSuiviForm" ng-submit="ficheSuiviForm.$valid && doFicheSuiviCreation()" novalidate>
 
+    <!--
     <a class="btn btn-default" href="#" role="button" ng-click="record()">
         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Enregistrer son
     </a>
 
     <a class="btn btn-default" href="#" role="button" ng-click="play()">
         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Lire son
-    </a>
+    </a>-->
 
     <div class="form-group">
         <label for="state">Etat des lieux</label>
@@ -48,12 +49,17 @@
     </div>
 
     <div class="form-group">
-        <label for="exercices">Exercices</label>
-        <textarea class="form-control"
-                  ng-model="suivi.exercices"
-                  rows="5"
-                  id="exercices"
-                  placeholder="Type, fréquence, série, nombre de répétitions"></textarea>
+        <label>Exercices</label>
+
+        <a class="btn btn-default" href="#" role="button" ng-click="addExercice()">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Ajouter un exercice
+        </a>
+
+        <div ng-repeat="exercice in exercices">
+            <textarea class="form-control"
+                      rows="5"
+                      placeholder="Type, fréquence, série, nombre de répétitions"></textarea>
+        </div>
     </div>
 
 <form name="ficheSuiviForm" ng-submit="ficheSuiviForm.$valid && doFicheSuiviCreation()"
