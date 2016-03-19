@@ -38,6 +38,17 @@ angular.module('page.ficheSuivi').controller('ficheSuiviController', ['$scope', 
         }
     };
 
+    $scope.slider_ticks_values2 = {
+        value: 5,
+        options: {
+            ceil: 100,
+            step: 10,
+            floor: 0,
+            showTicksValues: true
+
+        }
+    };
+
     var captureError = function(e) {
         console.log('captureError' ,e);
     };

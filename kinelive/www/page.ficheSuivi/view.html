@@ -22,45 +22,46 @@
                   id="state"></textarea>
     </div>
 
-        <label>Critères de suivi</label>
-
     <div class="form-group ">
         
         <label class="title">CRITERES DE SUIVI</label>
 
-        <div ng-repeat="criteria in criterias">
-            <select class="form-control" ng-model="criteria.type">
-                <option value="Amplitude">Amplitude</option>
-                <option value="Douleur">Douleur</option>
-                <option value="Mobilité">Distance doigt-sol</option>
-            </select>
-
+        <div>
+            <label>Douleur</label>
             <div class="row">
-                <div class="col-xs-4" style="float:left; width:100%;">
+                <div class="col-xs-10">
                     <rzslider rz-slider-model="criteria.level" rz-slider-options="slider_ticks_values.options"></rzslider>
                 </div>
+                <div class="col-xs-2">
+                    <a class="btn btn-default" href="#" role="button" ng-click="toggleImage()">
+                        <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <label>Distance doigt-sol</label>
 
-                <a class="btn btn-default col-xs-4" href="#" role="button" ng-click="toggleImage()">
-                    <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
-                </a>
+            <div class="row">
+                <div class="col-xs-10">
+                    <rzslider rz-slider-model="criteria.level" rz-slider-options="slider_ticks_values2.options"></rzslider>
+                </div>
+                <div class="col-xs-2">
+                    <a class="btn btn-default" href="#" role="button" ng-click="toggleImage()">
+                        <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="row">
-            <a class=" btn btn-default plus" href="#" role="button" ng-click="addCriteria()">
+            <a class="btn btn-default plus" href="#" role="button" ng-click="addCriteria()">
                 <i class="material-icons">add</i>
             </a>
-        </div>
-        
-
-        <div ng-show="showImage" ng-click="toggleImage()">
-            <img ng-src="image/graphique.png" class="img-responsive">
         </div>
     </div>
 
     <div class="form-group">
         <label class="title">EXERCICES</label>
-
-        
 
         <div ng-repeat="exercice in exercices">
             <textarea class="form-control"
