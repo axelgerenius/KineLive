@@ -85,10 +85,12 @@ angular.module('kinelive', ['ui.router',
 		document.getElementById("mainContent").style.marginLeft = "250px";
 		if (document.getElementById("titleBar")) {
 			document.getElementById("titleBar").style.marginLeft = "250px";
-			document.getElementById("tabBar").style.marginLeft = "250px";
 		}
 		if (document.getElementById("homeTitleBar")) {
 			document.getElementById("homeTitleBar").style.marginLeft = "250px";
+		}
+		if (document.getElementById("tabBar")) {
+			document.getElementById("tabBar").style.marginLeft = "250px";
 		}
 	};
 
@@ -96,11 +98,13 @@ angular.module('kinelive', ['ui.router',
 		document.getElementById("mainSidenav").style.width = "0px";
 		document.getElementById("mainContent").style.marginLeft = "0px";
 		if (document.getElementById("titleBar")) {
-			document.getElementById("titleBar").style.marginLeft = "0";
-			document.getElementById("tabBar").style.marginLeft = "0";
+			document.getElementById("titleBar").style.marginLeft = "0px";
 		}
 		if (document.getElementById("homeTitleBar")) {
-			document.getElementById("homeTitleBar").style.marginLeft = "0";
+			document.getElementById("homeTitleBar").style.marginLeft = "0px";
+		}
+		if (document.getElementById("tabBar")) {
+			document.getElementById("tabBar").style.marginLeft = "0px";
 		}
 	};
 }]);

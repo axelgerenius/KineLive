@@ -22,10 +22,12 @@ angular.module('ui.mainComponent.menu')
 		document.getElementById("mainContent").style.marginLeft = "0";
 		if (document.getElementById("titleBar")) {
 			document.getElementById("titleBar").style.marginLeft = "0";
-			document.getElementById("tabBar").style.marginLeft = "0";
 		}
 		if (document.getElementById("homeTitleBar")) {
 			document.getElementById("homeTitleBar").style.marginLeft = "0";
+		}
+		if (document.getElementById("tabBar")) {
+			document.getElementById("tabBar").style.marginLeft = "0";
 		}
 	};
 	
