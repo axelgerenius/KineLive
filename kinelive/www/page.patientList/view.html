@@ -1,25 +1,15 @@
 <ui-main-component-tab-bar-new-profil></ui-main-component-tab-bar-new-profil>
 
-<h3></h3>
-
 <div ng-init="initPatients()"></div>
-
-<!--<label>Rechercher: <input ng-model="searchText"></label>
-
-<a class="btn btn-default" role="button">
-	<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Ajouter un patient
-</a>-->
 
 <div class="container bootstrap snippet">
     <div class="row">
         <div class="col-lg-12">
-            <div class="main-box no-header clearfix">
                 <div class="main-box-body clearfix">
                     <div class="table-responsive">
                         <table class="table user-list">
                             <tbody>
                             <tr ng-repeat="patient in patients | filter:searchText">
-                                {{patient.id}}
                                 <td>
                                     <img src="{{patient.photo}}" alt="">
                                     <a href="#/profile/{{patient.id}}" class="user-link">{{patient.firstname}} {{patient.lastname}}</a>
@@ -33,13 +23,11 @@
                         </table>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
 </div>
 
 <div class="floatingButtonBar">
-
 	<span class="dropup" uib-dropdown on-toggle="toggled(open)">
 		<a href id="simple-dropdown">
             <h3 style="margin-left : 170px; text-align : right"><span class="glyphicon glyphicon-plus" aria-hidden="true" uib-dropdown-toggle></span></h3>
