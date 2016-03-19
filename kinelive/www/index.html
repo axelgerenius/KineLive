@@ -124,7 +124,7 @@
 </head>
 <body ng-app="kinelive" ng-controller="involveIonicController as involveIonicController" ng-swipe-left="closeMenu()" ng-swipe-right="openMenu()">
 
-<div id="mainContent">
+<div id="mainContent" ng-class="{mainContentWithMenu: leftMenuExpanded}">
 	<ui-view></ui-view>
 </div>
 <ui-main-component-menu></ui-main-component-menu>
