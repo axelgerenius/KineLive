@@ -1,0 +1,16 @@
+<ui-main-component-title-bar></ui-main-component-title-bar>
+
+<h3>Liste des patients</h3>
+
+<div ng-init="patients = [{firstname:'John', lastname:'Rambo'},
+                         {firstname:'Mary', lastname:'Poppins'},
+                         {firstname:'Mike', lastname:'Tyzon'},
+                         {firstname:'Adam', lastname:'Eve'},
+                         {firstname:'Juliette', lastname:'Romeo'}]"></div>
+
+<label>Rechercher: <input ng-model="searchText"></label>
+<div class="list-group">
+    <a ng-repeat="patient in patients | filter:searchText" href="#" class="list-group-item">{{patient.firstname}} {{patient.lastname}}</a>
+</div>
+
+
