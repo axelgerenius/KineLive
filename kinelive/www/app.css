@@ -273,6 +273,10 @@
 
 .top-buffer { margin-bottom:0px; }
 
+.icon-kinelive-orange {
+  color : #FFA31A;
+}
+
 @font-face {
     font-family: "roboto";
     src: url('lib/RobotoTTF/Roboto-Regular.ttf');
