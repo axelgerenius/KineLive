@@ -38,4 +38,9 @@ angular.module('ui.mainComponent.menu')
 		$scope.closeMenu();
 		$location.path('/profile');
 	};
+
+	$scope.goToPatientCreationForm = function() {
+		$scope.closeMenu();
+		$location.path('/addPatient');
+	};
 }]);

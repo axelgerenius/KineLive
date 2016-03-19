@@ -13,7 +13,11 @@ angular.module('ui.mainComponent.tabBar')
 	$scope.goToAddEvent = function() {
 		$location.path("/addEvent");
 	};
-	
+
+	$scope.goToAddPatient = function() {
+		$location.path("/addPatient");
+	};
+
 	$scope.goToHome = function() {
 		$location.path("/home");
 	};
