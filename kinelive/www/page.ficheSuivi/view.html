@@ -1,6 +1,7 @@
 <ui-main-component-title-bar></ui-main-component-title-bar>
 <ui-main-component-tab-bar-form></ui-main-component-tab-bar-form>
 
+<div class="container">
 <h3>Nouvelle fiche suivi</h3>
 <form name="ficheSuiviForm" ng-submit="ficheSuiviForm.$valid && doFicheSuiviCreation()" novalidate>
 
@@ -21,7 +22,7 @@
     </div>
 
     <div class="form-group">
-        <labelCritères de suivi en rééducation</label>
+        <label>Critères de suivi en rééducation</label>
 
         <a class="btn btn-default" href="#" role="button" ng-click="addCriteria()">
             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Ajouter un critère
@@ -34,14 +35,15 @@
                 <option value="Mobilité">Mobilité</option>
             </select>
 
-            <select class="form-control" ng-model="criteria.level">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-            </select>
+            <div class="row">
+                <div style="float:left; width:70%;">
+                    <rzslider rz-slider-model="criteria.level" rz-slider-options="slider_ticks_values.options"></rzslider>
+                </div>
+                <div style="float:right; width:30%;">
+                    <button uib-popover="I appeared on mouse enter!" popover-trigger="mouseenter" type="button" class="btn btn-default">Mouseenter</button>
+                </div>
+            </div>
+            
         </div>
     </div>
 
@@ -56,9 +58,11 @@
 
 <form name="ficheSuiviForm" ng-submit="ficheSuiviForm.$valid && doFicheSuiviCreation()"
       novalidate>
-<rzslider rz-slider-model="minSlider.value" rz-slider-options="slider_ticks_values.options"></rzslider>  <!--On récupère la value avec ng-model="minSlider.value"-->
+
 
 </form>
+    </form>
+</div>
 
 
 
