@@ -1,4 +1,20 @@
 <ui-main-component-title-bar></ui-main-component-title-bar>
 <ui-main-component-tab-bar-patient></ui-main-component-tab-bar-patient>
 
-reeducation : {{patient.firstname}}
+<h3>{{patient.firstname}} {{patient.lastname}}</h3>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Pathologie</h3>
+	</div>
+	<div class="panel-body">
+		{{ patient.pathology }}
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Objectif du patient</h3>
+	</div>
+	<div class="panel-body">
+		{{ patient.goal }}
+	</div>
+</div>

@@ -6,17 +6,23 @@ angular.module('service.patientService', [])
 			{
 				"id" : 1,
 				"firstname" : "Mike",
-				"lastname" : "Portnoy"
+				"lastname" : "Portnoy",
+				"pathology" : "Arthrose",
+				"goal" : "pouvoir à nouveau jouer de la batterie."
 			},
 			{
 				"id" : 2,
 				"firstname" : "Neal",
-				"lastname" : "Morse"
+				"lastname" : "Morse",
+				"pathology" : "Lombalgie",
+				"goal" : "mettre à nouveau le feu sur scène."
 			},
 			{
 				"id" : 3,
 				"firstname" : "Roine",
-				"lastname" : "Stolt"
+				"lastname" : "Stolt",
+				"pathology" : "Rééducation ligaments croisés",
+				"goal" : "Faire des bonds sur scène"
 			},
 			{
 				"id" : 4,
