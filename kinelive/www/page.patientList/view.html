@@ -11,13 +11,14 @@
                             <tbody>
                             <tr ng-repeat="patient in patients | filter:searchText">
                                 <td>
-                                    <img src="{{patient.photo}}" alt="">
-                                    <a href="#/profile/{{patient.id}}" class="user-link">{{patient.firstname}} {{patient.lastname}}</a>
+                                    <a href="#/profile/{{patient.id}}" class="user-link">
+                                        <img src="{{patient.photo}}" alt="" class="photo-patient">
+                                        {{patient.firstname}} {{patient.lastname}}
+                                    </a>
                                 </td>
                                 <td class="text-center">
                                     <span class="label label-success">Actif</span>
                                 </td>
-                                </a>
                             </tr>
                             </tbody>
                         </table>
