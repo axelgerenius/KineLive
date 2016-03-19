@@ -14,10 +14,33 @@ angular.module('service.patientService', []).factory('patientService', [function
 				"adress" : "California",
 				"context" : "Joueur de batterie amateur.",
 				"anamnese" : "",
+				"birthdate" : "1967-04-20",
 				"criteriaList" : [
 					{
 						"name" : "douleur",
 						"values" : [9, 8, 7, 7, 5, 4, 2]
+					}
+				],
+				"seanceList" : [
+					{
+						"numero" : 1,
+						"date" : "2016-02-12",
+						"type" : "bilan"
+					},
+					{
+						"numero" : 2,
+						"date" : "2016-02-19",
+						"type" : "suivi"
+					},
+					{
+						"numero" : 3,
+						"date" : "2016-02-26",
+						"type" : "suivi"
+					},
+					{
+						"numero" : 4,
+						"date" : "2016-03-03",
+						"type" : "bilan"
 					}
 				]
 
@@ -35,6 +58,7 @@ angular.module('service.patientService', []).factory('patientService', [function
 				"adress" : "California",
 				"context" : "Chanteur à ses heures perdues",
 				"anamnese" : "",
+				"birthdate" : "1960-08-02",
 				"criteriaList" : [
 					{
 						"name" : "douleur",
@@ -55,6 +79,7 @@ angular.module('service.patientService', []).factory('patientService', [function
 				"adress" : "California",
 				"context" : "Guitariste du dimanche",
 				"anamnese" : "",
+				"birthdate" : "1956-09-05",
 				"criteriaList" : [
 					{
 						"name" : "angle",
@@ -79,6 +104,7 @@ angular.module('service.patientService', []).factory('patientService', [function
 				"adress" : "California",
 				"context" : "Bassiste débutant",
 				"anamnese" : "",
+				"birthdate" : "1959-01-15",
 				"criteriaList" : [
 					{
 						"name" : "douleur",

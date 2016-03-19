@@ -18,3 +18,24 @@
 		{{ patient.goal }}
 	</div>
 </div>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Traitement</h3>
+	</div>
+	<div class="panel-body">
+		<table class="table">
+			<tr ng-repeat="seance in patient.seanceList">
+				<td>N° {{ seance.numero }}</td>
+				<td>{{ seance.date | date : longDate }}</td>
+				<td>{{ seance.type }}</td>
+				<td><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div class="floatingButtonBar">
+	<a class="btn btn-default" href="#/profile/{{patient.id}}" role="button">
+ 		<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Ajouter
+	</a>
+</div>
