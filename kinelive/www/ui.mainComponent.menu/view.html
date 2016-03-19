@@ -1,0 +1,19 @@
+<div id="mainSidenav" class="sidenav bg-primary">
+	<a class="closeSidenav bg-primary" ng-click="closeMenu()">&times;</a>
+	<a class="bg-primary sidenavLink" ng-click="logout()" ng-if="connected">
+		<span class="glyphicon glyphicon-log-out bg-primary" aria-hidden="true"></span>
+		Déconnexion
+	</a>
+	<a class="bg-primary sidenavLink" ng-click="goToLogin()" ng-if="!connected">
+		<span class="glyphicon glyphicon-log-in bg-primary" aria-hidden="true"></span>
+		Connexion
+	</a>
+	<a class="bg-primary sidenavLink" ng-click="goToProfile()" ng-if="connected">
+		<span class="glyphicon glyphicon-log-in bg-primary" aria-hidden="true"></span>
+		Profile
+	</a>
+	<a class="bg-primary sidenavLink" ng-click="goToRegistration()" ng-if="!connected">
+		<span class="glyphicon glyphicon-registration-mark bg-primary" aria-hidden="true"></span>
+		Inscription
+	</a>
+</div>

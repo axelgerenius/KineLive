@@ -1,0 +1,177 @@
+
+/* angular */
+
+/*.ng-invalid.ng-dirty {*/
+/*	border-color : #FA787E;*/
+/*}*/
+
+/*.ng-valid.ng-dirty {*/
+/*	border-color : #78FA89;*/
+/*}*/
+
+/* bootstrap */
+
+/*.input-group {*/
+/*	margin-bottom : 10px;*/
+/*}*/
+
+/* vignette categorie */
+.category-image-box {
+  width: 70px;
+  height: 70px;
+  padding : 0px;
+}
+
+.category-image {
+  background-size: 140px auto;
+  background-position: center;
+  background-repeat : no-repeat;
+  width: 70px; height: 70px;
+}
+
+
+/* TEST ANGULAR MAP */
+/* hack google map pour autocomplete qui passe derrière popup */
+.pac-container {
+    z-index: 1051 !important;
+}
+
+.pac-controls {
+  margin-top: 16px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px !important;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  left : 10px !important;
+}
+
+#pac-input {
+  background-color: #fff;
+  padding: 0 11px 0 13px;
+  width: 90%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  text-overflow: ellipsis;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+  margin-left: -1px;
+  padding-left: 14px;  /* Regular padding-left + 1. */
+  width: 401px;
+}
+
+.pac-container {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#type-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.angular-google-map-container {
+    width: 100%;
+    height: 300px;
+}
+
+.gm-style-mtc {
+    margin-top : 50px !important
+}
+
+
+/* MENU */
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenavLink {
+    /* pour éviter que le texte passe en dessous de l'icone */
+    min-width : 300px;
+}
+
+/* Position and style the close button (top right corner) */
+.closeSidenav {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+/* MAIN CONTENT */
+#mainContent {
+    transition: margin-left .5s;
+    width:100%;
+    margin-top : 80px;
+    margin-bottom : 0px;
+}
+
+/* TITLE BAR */
+#titleBar {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 40px;
+  float: left;
+  position : fixed;
+  left : 0px;
+  top : 0px;
+  width : 100%;
+  transition: margin-left .5s;
+}
+
+/* TAB BAR */
+#tabBar {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 40px;
+  float: left;
+  position : fixed;
+  left : 0px;
+  top : 40px;
+  width : 100%;
+  transition: margin-left .5s;
+}
+
+#tabBar .iconLink {
+  text-align : center;
+  font-size : 1.7em;
+  margin-top : 6px;
+  opacity : 0.7;
+}
+
+#tabBar .iconLink.active {
+  opacity : 1.0;
+}

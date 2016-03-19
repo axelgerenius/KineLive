@@ -1,0 +1,70 @@
+
+<h3>Inscription</h3>
+<form name="registrationForm" ng-submit="registrationForm.$valid && doRegistration()" novalidate>
+	<div class="form-group">
+		<label>Pseudonyme :</label>
+		<input ng-model="login.pseudonym"
+			type="text"
+			class="item item-input"
+			placeholder="pseudonyme"
+			title="Pseudonyme" required />
+	</div>
+	<div class="form-group">
+		<label>Prénom :</label>
+		<input ng-model="login.firstname"
+			type="text"
+			class="item item-input"
+			placeholder="prénom"
+			title="Prénom" />
+	</div>
+	<div class="form-group">
+		<label>Nom :</label>
+		<input ng-model="login.lastname"
+			type="text"
+			class="item item-input"
+			placeholder="nom"
+			title="Nom" />
+	</div>
+	<div class="form-group">
+		<label>Adresse mail :</label>
+		<input ng-model="login.email"
+			type="email"
+			class="item item-input"
+			placeholder="email"
+			title="Email" required />
+<<<<<<< HEAD
+
+=======
+	</div>
+	<div class="form-group">
+		<label>Mot de passe :</label>
+>>>>>>> migration-bootstrap
+		<input ng-model="login.password"
+			type="password"
+			class="item item-input"
+			placeholder="mot de passe"
+			title="Mot de passe" required />
+	</div>
+	<div class="form-group">
+		<label>Date de naissance :</label>
+		<input ng-model="login.birthdate"
+			ng-required="true"
+			type="date">
+	</div>
+	<div class="radio">
+		<label>
+			<input type="radio" name="Homme" ng-model="login.gender" ng-value="'M'" />
+			Homme
+		</label>
+	</div>
+	<div class="radio">
+		<label>
+			<input type="radio" name="Femme" ng-model="login.gender" ng-value="'F'" />
+			Femme
+		</label>
+	</div>
+
+		<input type="submit" class="btn btn-default"
+			value="S'enregistrer" />
+</form>
+

@@ -1,0 +1,40 @@
+
+<h3>Login</h3>
+
+<form ng-if="!connected" name="loginForm"
+      ng-submit="loginForm.$valid && login()"
+      autocomplete="on" novalidate>
+
+    <div class="form-group css-form">
+        <input ng-model="model.login.username" name="email"
+               type="email" class="form-control" id="inputEmail" placeholder="Adresse email"
+                required>
+
+        <div ng-show="loginForm.$submitted || loginForm.email.$touched">
+            <span ng-show="loginForm.email.$error.required">L'email est obligatoire</span>
+            <span ng-show="loginForm.email.$error.email">L'email n'est pas valide</span>
+        </div>
+
+    </div>
+
+    <div class="form-group css-form">
+        <input type="password" name="password"
+               ng-model="model.login.password"
+               data-minlength="6" class="form-control" id="inputPassword" placeholder="Mot de passe"
+               autocomplete="on"
+               required>
+
+        <div ng-show="loginForm.$submitted || loginForm.password.$touched">
+            <div ng-show="loginForm.password.$error.required">Le mot de passe est obligatoire</div>
+        </div>
+    </div>
+
+    <button type="submit" name="save" class="btn btn-default">Se connecter</button>
+    <div ng-show="loginForm.$submitted || loginForm.save.$touched">
+        <div ng-show="loginForm.password.$error.required || loginForm.email.$error.required">Merci de remplir les champs obligatoires </div>
+    </div>
+</form>
+
+<div ng-if="connected">
+    Vous êtes déjà connecté.
+</div>

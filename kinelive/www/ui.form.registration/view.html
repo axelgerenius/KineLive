@@ -1,0 +1,94 @@
+
+<h3>Inscription</h3>
+<form name="registrationForm" ng-submit="registrationForm.$valid && doRegistration()"
+	  novalidate>
+	<div class="form-group css-form">
+		<input ng-model="login.pseudonym"
+			type="text"
+			   name="pseudo"
+			class="form-control"
+			placeholder="pseudonyme"
+			title="Pseudonyme" required
+            />
+	</div>
+	<div ng-show="registrationForm.$submitted || registrationForm.pseudo.$touched">
+		<div ng-show="registrationForm.pseudo.$error.required">Le pseudonyme est obligatoire</div>
+	</div>
+
+    <div class="form-group css-form">
+		<input ng-model="login.firstname"
+			type="text"
+			class="form-control"
+			   name="firstname"
+			placeholder="prénom"
+			title="Prénom"
+				required/>
+	</div>
+	<div ng-show="registrationForm.$submitted || registrationForm.firstname.$touched">
+		<div ng-show="registrationForm.firstname.$error.required">Le prenom est obligatoire</div>
+	</div>
+
+
+    <div class="form-group css-form">
+		<input ng-model="login.lastname"
+			type="text"
+			class="form-control"
+			   name="lastename"
+			placeholder="nom"
+			title="Nom"
+               required/>
+    </div>
+	<div ng-show="registrationForm.$submitted || registrationForm.lastename.$touched">
+		<div ng-show="registrationForm.lastename.$error.required">Le nom est obligatoire</div>
+	</div>
+
+    <div class="form-group css-form">
+		<input ng-model="login.email"
+			type="email"
+			   name="email"
+			class="form-control"
+			placeholder="adresse email"
+			   title="Email" required />
+	</div>
+
+	<div ng-show="registrationForm.$submitted || registrationForm.email.$touched">
+		<span ng-show="registrationForm.email.$error.required">L'email est obligatoire</span>
+		<span ng-show="registrationForm.email.$error.email">L'email n'est pas valide</span>
+	</div>
+	<div class="form-group css-form">
+		<input ng-model="login.password"
+               id="inputPassword"
+			type="password"
+			   name="password"
+			   placeholder="mot de passe"
+			class="form-control"
+			title="Mot de passe" required />
+	</div>
+	<div ng-show="registrationForm.$submitted || registrationForm.password.$touched">
+		<div ng-show="registrationForm.password.$error.required">Le mot de passe est obligatoire</div>
+	</div>
+
+	<div class="form-group ">
+		<input ng-model="login.birthdate"
+			ng-required="true"
+			   class="form-control"
+			   placeholder="Date"
+			type="date">
+	</div>
+	<div class="radio">
+		<label>
+			<input type="radio" name="Homme" ng-model="login.gender" ng-value="'M'" />
+			Homme
+		</label>
+	</div>
+	<div class="radio">
+		<label>
+			<input type="radio" name="Femme" ng-model="login.gender" ng-value="'F'" />
+			Femme
+		</label>
+	</div>
+
+		<input type="submit" class="btn btn-default"
+			value="S'enregistrer" />
+</form>
+

@@ -1,0 +1,19 @@
+<div ng-click="close()">
+	<div ng-if="model.type == 'error' " class="alert alert-danger" role="alert">
+		<b>{{model.code}} : </b>
+		<span ng-repeat="message in model.messageList">
+			{{message}}<br/>
+		</span>
+	</div>
+	<div ng-if="model.type == 'warning' " class="alert alert-warning" role="alert">
+		<b>{{model.code}} : </b><br/>
+		<span ng-repeat="message in model.messageList">
+			{{message}}<br/>
+		</span>
+	</div>
+	<div ng-if="model.type == 'success' " class="alert alert-success" role="alert">
+		<span ng-repeat="message in model.messageList">
+			{{message}}<br/>
+		</span>
+	</div>
+</div>
