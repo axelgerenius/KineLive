@@ -9,6 +9,7 @@ angular.module('kinelive', ['ui.router',
 	'popup.serverMessage',
 	'ui.mainComponent.titleBar',
 	'ui.mainComponent.tabBar',
+	'ui.mainComponent.tabBarPatient',
 	'ui.mainComponent.menu',
 	'page.home',
 	'page.login',
@@ -16,7 +17,9 @@ angular.module('kinelive', ['ui.router',
 	'page.addEvent',
 	'page.addPatient',
 	'service.patientService',
-	'page.patientList'])
+	'page.patientList',
+	'page.profile',
+	'page.reeducation'])
 
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 

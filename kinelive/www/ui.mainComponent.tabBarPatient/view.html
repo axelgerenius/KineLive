@@ -1,0 +1,13 @@
+<div id="tabBar" class="bg-primary">
+	<div class="row">
+		<div class="col-xs-4 iconLink" ng-class="{'active' : currentState == 'profile'}">
+			<span ng-click="goToAddPatient()">Profil</span>
+		</div>
+		<div class="col-xs-4 iconLink" ng-class="{'active' : currentState == 'reeducation'}">
+			<span ng-click="goToHome()">Rééduc</span>
+		</div>
+		<div class="col-xs-4 iconLink" ng-class="{'active' : currentState == 'calendar'}">
+			<span ng-click="goToCalendar()">Comm</span>
+		</div>
+	</div>
+</div>
