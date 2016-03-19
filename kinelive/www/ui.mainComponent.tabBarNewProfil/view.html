@@ -1,28 +1,34 @@
 <div id="titleBar" class="bg-primary">
 	<div class="row bg-primary">
 		<div class="col-xs-3 bg-primary">
-			<span/>
+			<button type="button" class="btn btn-primary pull-left hamburger"
+					ng-click="openMenu()"
+					style="vertical-align : middle;">
+				<span class="glyphicon glyphicon-menu-hamburger"></span>
+			</button>
 		</div>
 		<div class="col-xs-6 bg-primary" style="text-align : center;"><h4>KineLive</h4></div>
-		<div class="col-xs-3 bg-primary"></div>
+		<div class="col-xs-3 bg-primary">
+			<button type="button" class="btn btn-primary pull-right search"
+					style="vertical-align : middle;">
+				<span class="glyphicon glyphicon-search"></span>
+			</button>
+		</div>
 	</div>
 </div>
 
 <div id="tabBar" class="bg-primary">
-	<div class="row">
+	<div class="row patientList">
 		<div class="col-xs-3 bg-primary">
-			<button type="button" class="btn btn-primary pull-left"
+			<button type="button" class="btn btn-primary pull-left arrow"
 					ng-click="goToHome()"
 					style="vertical-align : middle;">
 				<span class="glyphicon glyphicon-arrow-left"></span>
 			</button>
 		</div>
-		<div class="col-xs-6 bg-primary" style="text-align : center;"><h4>Patients</h4></div>
+		<div class="col-xs-6 bg-primary" style="text-align : center;"><h4>PATIENTS</h4></div>
 		<div class="col-xs-3 bg-primary">
-			<button type="button" class="btn btn-primary pull-right"
-					style="vertical-align : middle;">
-				<span class="glyphicon glyphicon-search"></span>
-			</button>
+			<span/>
 		</div>
 	</div>
 </div>

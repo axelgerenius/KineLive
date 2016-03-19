@@ -17,16 +17,16 @@
 
 /* vignette categorie */
 .category-image-box {
-  width: 70px;
-  height: 70px;
-  padding : 0px;
+    width: 70px;
+    height: 70px;
+    padding : 0px;
 }
 
 .category-image {
-  background-size: 140px auto;
-  background-position: center;
-  background-repeat : no-repeat;
-  width: 70px; height: 70px;
+    background-size: 140px auto;
+    background-position: center;
+    background-repeat : no-repeat;
+    width: 70px; height: 70px;
 }
 
 
@@ -37,48 +37,48 @@
 }
 
 .pac-controls {
-  margin-top: 16px;
-  border: 1px solid transparent;
-  border-radius: 2px 0 0 2px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  height: 32px !important;
-  outline: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  left : 10px !important;
+    margin-top: 16px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px !important;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    left : 10px !important;
 }
 
 #pac-input {
-  background-color: #fff;
-  padding: 0 11px 0 13px;
-  width: 90%;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  text-overflow: ellipsis;
+    background-color: #fff;
+    padding: 0 11px 0 13px;
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-overflow: ellipsis;
 }
 
 #pac-input:focus {
-  border-color: #4d90fe;
-  margin-left: -1px;
-  padding-left: 14px;  /* Regular padding-left + 1. */
-  width: 401px;
+    border-color: #4d90fe;
+    margin-left: -1px;
+    padding-left: 14px;  /* Regular padding-left + 1. */
+    width: 401px;
 }
 
 .pac-container {
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #type-selector {
-  color: #fff;
-  background-color: #4d90fe;
-  padding: 5px 11px 0px 11px;
+    color: #fff;
+    background-color: #4d90fe;
+    padding: 5px 11px 0px 11px;
 }
 
 #type-selector label {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
-  font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
 }
 
 .angular-google-map-container {
@@ -174,88 +174,86 @@
 
 /* TITLE BAR */
 #titleBar {
-  z-index : 500;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  height: 40px;
-  float: left;
-  position : fixed;
-  left : 0px;
-  top : 0px;
-  width : 100%;
-  transition: margin-left .5s;
+    z-index : 500;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 40px;
+    float: left;
+    position : fixed;
+    left : 0px;
+    top : 0px;
+    width : 100%;
+    transition: margin-left .5s;
 }
 
 /* HOME TITLE BAR */
 #homeTitleBar {
-  z-index : 500;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  height: 160px;
-  float: left;
-  position : fixed;
-  left : 0px;
-  top : 0px;
-  width : 100%;
-  transition: margin-left .5s;
+    z-index : 500;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 160px;
+    float: left;
+    position : fixed;
+    left : 0px;
+    top : 0px;
+    width : 100%;
+    transition: margin-left .5s;
 }
 
 /* TAB BAR */
 #tabBar {
-  z-index : 500;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  height: 40px;
-  float: left;
-  position : fixed;
-  left : 0px;
-  top : 40px;
-  width : 100%;
-  transition: margin-left .5s;
+    z-index : 500;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 40px;
+    float: left;
+    position : fixed;
+    left : 0px;
+    top : 40px;
+    width : 100%;
+    transition: margin-left .5s;
 }
 
 #tabBar .iconLink {
-  text-align : center;
-  font-size : 1.4em;
-  margin-top : 6px;
-  opacity : 0.7;
+    text-align : center;
+    font-size : 1.4em;
+    margin-top : 6px;
+    opacity : 0.7;
 }
 
 #tabBar .iconLink.active {
-  opacity : 1.0;
+    opacity : 1.0;
 }
 
 .floatingButtonBar {
-  position : fixed;
-  right : 0px;
-  bottom : 0px;
-  padding-right : 10px;
-  padding-bottom: 10px;
+    position : fixed;
+    right : 0px;
+    bottom : 0px;
+    padding-right : 10px;
+    padding-bottom: 10px;
 }
 
 .bg-primary-dark {
-  background-color: #115F70;
+    background-color: #115F70;
 }
 
 .title {
-    margin-top: 20px;
-    margin-bottom: 10px;
     margin-left: 0;
     color: #1D9FBB;
 }
 
 .row.no-gutter {
-  margin-left: 0;
-  margin-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .row.no-gutter [class*='col-']:not(:first-child),
 .row.no-gutter [class*='col-']:not(:last-child) {
-  padding-right: 0;
-  padding-left: 0;
+    padding-right: 0;
+    padding-left: 0;
 }
 /* resize images */
 .thumbnail img {
@@ -281,7 +279,7 @@
 .top-buffer { margin-bottom:0px; }
 
 .icon-kinelive-orange {
-  color : #FFA31A;
+    color : #FFA31A;
 }
 
 @font-face {
@@ -318,4 +316,19 @@
     transform: scale(2,2);
 }
 
+.search {
+    border: none;
+    font-size: 16px;
+}
 
+.arrow {
+    border: none;
+}
+
+.user-list .user-link {
+    padding-left: 16px;
+}
+
+.irm{
+    border-radius: 35%;
+}
