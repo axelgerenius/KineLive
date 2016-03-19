@@ -290,4 +290,9 @@
     opacity: 0.4;
 }
 
+.hamburger {
+    border: none;
+    font-size: 16px;
+}
+
 
