@@ -241,8 +241,10 @@
 }
 
 .title {
-  margin-left: 0;
-  color: #1D9FBB;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    color: #1D9FBB;
 }
 
 .row.no-gutter {
@@ -265,6 +267,15 @@
 .thumbnail {
     text-align: center;
     border: none;
+}
+
+.plus {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    float: right;
+    border: none;
+    color: #FFA31A;
 }
 
 .top-buffer { margin-bottom:0px; }

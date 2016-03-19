@@ -14,20 +14,19 @@
         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Lire son
     </a>-->
 
-    <div class="form-group title">
-        <label for="state">Etat des lieux</label>
+    <div class="form-group">
+        <label class="title" for="state">ETAT DES LIEUX</label>
         <textarea class="form-control"
                   ng-model="suivi.state"
                   rows="5"
                   id="state"></textarea>
     </div>
 
-    <div class="form-group title">
         <label>Critères de suivi</label>
 
-        <a class="btn btn-default" href="#" role="button" ng-click="addCriteria()">
-            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Ajouter un critère
-        </a>
+    <div class="form-group ">
+        
+        <label class="title">CRITERES DE SUIVI</label>
 
         <div ng-repeat="criteria in criterias">
             <select class="form-control" ng-model="criteria.type">
@@ -37,30 +36,46 @@
             </select>
 
             <div class="row">
-                <div style="float:left; width:70%;">
+                <div class="col-xs-4" style="float:left; width:100%;">
                     <rzslider rz-slider-model="criteria.level" rz-slider-options="slider_ticks_values.options"></rzslider>
                 </div>
 
-                <a class="btn btn-default" href="#" role="button" ng-click="toggleImage()">
+                <a class="btn btn-default col-xs-4" href="#" role="button" ng-click="toggleImage()">
                     <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
                 </a>
             </div>
         </div>
+        <div class="row">
+            <a class=" btn btn-default plus" href="#" role="button" ng-click="addCriteria()">
+                <i class="material-icons">add</i>
+            </a>
+        </div>
+        
+
+        <div ng-show="showImage" ng-click="toggleImage()">
+            <img ng-src="image/graphique.png" class="img-responsive">
+        </div>
     </div>
 
     <div class="form-group">
-        <label class="title">Exercices</label>
+        <label class="title">EXERCICES</label>
 
-        <a class="btn btn-default" href="#" role="button" ng-click="addExercice()">
-            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Ajouter un exercice
-        </a>
+        
 
         <div ng-repeat="exercice in exercices">
             <textarea class="form-control"
                       rows="5"
                       placeholder="Type, fréquence, série, nombre de répétitions"></textarea>
         </div>
+        <div class="row">
+            <a class="btn btn-default plus" href="#" role="button" ng-click="addExercice()">
+                <i class="material-icons">add</i>
+            </a>
+        </div>
+        
+        
     </div>
+        
 
 <form name="ficheSuiviForm" ng-submit="ficheSuiviForm.$valid && doFicheSuiviCreation()"
       novalidate>

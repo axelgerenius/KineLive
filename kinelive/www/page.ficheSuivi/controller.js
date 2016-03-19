@@ -23,7 +23,7 @@ angular.module('page.ficheSuivi').controller('ficheSuiviController', ['$scope', 
 
     //Minimal slider config
     $scope.minSlider = {
-        value: 10
+        value: 100
     };
         
     //Slider with ticks and values
@@ -31,6 +31,7 @@ angular.module('page.ficheSuivi').controller('ficheSuiviController', ['$scope', 
         value: 5,
         options: {
             ceil: 10,
+            step: 1,
             floor: 0,
             showTicksValues: true
 
