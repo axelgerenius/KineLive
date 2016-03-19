@@ -40,15 +40,15 @@
                 <div style="float:left; width:70%;">
                     <rzslider rz-slider-model="criteria.level" rz-slider-options="slider_ticks_values.options"></rzslider>
                 </div>
+
+                <a class="btn btn-default" href="#" role="button" ng-click="toggleImage()">
+                    <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+                </a>
             </div>
         </div>
 
-        <a class="btn btn-default" href="#" role="button" ng-click="displayImage()">
-            <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
-        </a>
-
-        <div ng-show="{{ showImage }}">
-            <img src="image/graphique.png" class="img-responsive">
+        <div ng-show="showImage" ng-click="toggleImage()">
+            <img ng-src="image/graphique.png" class="img-responsive">
         </div>
     </div>
 
