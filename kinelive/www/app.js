@@ -19,6 +19,7 @@ angular.module('kinelive', ['ui.router',
 	'service.patientService',
 	'page.patientList',
 	'page.profile',
+	'page.ficheSuivi',
 	'page.reeducation'])
 
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
