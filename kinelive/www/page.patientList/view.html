@@ -9,4 +9,5 @@
     <a ng-repeat="patient in patients | filter:searchText" href="#" class="list-group-item">{{patient.firstname}} {{patient.lastname}}</a>
 </div>
 
-
+<a class="btn btn-default" href="#/addPatient" role="button">
+	<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Ajouter un patient</a>
