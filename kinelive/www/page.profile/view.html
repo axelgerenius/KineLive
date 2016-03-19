@@ -1,4 +1,121 @@
 <ui-main-component-title-bar></ui-main-component-title-bar>
-<ui-main-component-tab-bar-patient></ui-main-component-tab-bar-patient>
+<ui-main-component-tab-bar-patient></ui-main-component-tab-bar-patient>Ò
 
-profile : {{patient.firstname}}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Profil de {{patient.lastname}} {{patient.firstname}}</h3>
+    </div>
+    <div class="panel-body">
+
+<form name="patientCreationForm" ng-submit="patientCreationForm.$valid && doPatientCreation()"
+      novalidate>
+
+    <div class="form-group css-form">
+        <input ng-model="patient.firstname"
+               type="text"
+               class="form-control"
+               name="firstname"
+               placeholder="prénom"
+               title="Prénom"
+               required/>
+    </div>
+    <div ng-show="patientCreationForm.$submitted || patientCreationForm.firstname.$touched">
+        <div ng-show="patientCreationForm.firstname.$error.required">Le prenom est obligatoire</div>
+    </div>
+
+
+    <div class="form-group css-form">
+        <input ng-model="patient.lastname"
+               type="text"
+               class="form-control"
+               name="lastname"
+               placeholder="nom"
+               title="Nom"
+               required/>
+    </div>
+    <div ng-show="patientCreationForm.$submitted || patientCreationForm.lastename.$touched">
+        <div ng-show="patientCreationForm.lastename.$error.required">Le nom est obligatoire</div>
+    </div>
+
+    <div class="radio">
+        <label>
+            <input type="radio" name="Homme" ng-model="patient.gender" ng-value="'M'" />
+            Homme
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="Femme" ng-model="patient.gender" ng-value="'F'" />
+            Femme
+        </label>
+    </div>
+
+    <div class="form-group ">
+        <input ng-model="patient.birthdate"
+               class="form-control"
+               placeholder="Date"
+               type="date">
+    </div>
+
+    <div class="form-group css-form">
+        <input ng-model="patient.email"
+               type="email"
+               name="email"
+               class="form-control"
+               placeholder="adresse email"
+               title="Email" required />
+    </div>
+
+    <div ng-show="patientCreationForm.$submitted || patientCreationForm.email.$touched">
+        <span ng-show="patientCreationForm.email.$error.required">L'email est obligatoire</span>
+        <span ng-show="patientCreationForm.email.$error.email">L'email n'est pas valide</span>
+    </div>
+
+    <div class="form-group css-form">
+        <input ng-model="patient.phone"
+               type="tel"
+               name="phone"
+               class="form-control"
+               placeholder="Telephone"
+               title="Telephone" required />
+    </div>
+
+    <div ng-show="patientCreationForm.$submitted || patientCreationForm.phone.$touched">
+        <span ng-show="patientCreationForm.phone.$error.required">Le numéro de téléphone est obligatoire</span>
+        <span ng-show="patientCreationForm.phone.$error.phone">Le numéro de téléphone n'est pas valide</span>
+    </div>
+
+    <div class="form-group css-form">
+        <input ng-model="patient.adress"
+               type="text"
+               name="adress"
+               class="form-control"
+               placeholder="Adresse postale"
+               title="adresse" />
+    </div>
+
+    <div class="form-group css-form">
+        <input ng-model="patient.context"
+               type="text"
+               name="context"
+               class="form-control"
+               placeholder="Contexte patient"
+               title="Contexte patient" />
+    </div>
+
+    <div class="form-group css-form">
+        <input ng-model="patient.anamnese"
+               type="text"
+               name="anamnese"
+               class="form-control"
+               placeholder="Anamnèse"
+               title="Anamnèse" />
+    </div>
+
+    <label class="file">
+        <input type="file" id="file">
+        <span class="file-custom"></span>
+    </label>
+</form>
+</div>
+</div>

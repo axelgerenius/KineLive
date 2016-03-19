@@ -4,6 +4,14 @@
 <h3>Nouvelle fiche suivi</h3>
 <form name="ficheSuiviForm" ng-submit="ficheSuiviForm.$valid && doFicheSuiviCreation()" novalidate>
 
+    <a class="btn btn-default" href="#" role="button" ng-click="record()">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Enregistrer son
+    </a>
+
+    <a class="btn btn-default" href="#" role="button" ng-click="play()">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Lire son
+    </a>
+
     <div class="form-group">
         <label for="state">Etat des lieux</label>
         <textarea class="form-control"
@@ -45,5 +53,13 @@
                   id="exercices"
                   placeholder="Type, fréquence, série, nombre de répétitions"></textarea>
     </div>
+
+<form name="ficheSuiviForm" ng-submit="ficheSuiviForm.$valid && doFicheSuiviCreation()"
+      novalidate>
+<rzslider rz-slider-model="minSlider.value" rz-slider-options="slider_ticks_values.options"></rzslider>  <!--On récupère la value avec ng-model="minSlider.value"-->
+
 </form>
+
+
+
 
