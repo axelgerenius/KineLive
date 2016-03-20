@@ -168,7 +168,7 @@
 #mainContent {
     transition: margin-left .5s;
     width:100%;
-    margin-top : 80px;
+    margin-top : 110px;
     margin-bottom : 0px;
 }
 
@@ -178,7 +178,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    height: 40px;
+    height: 60px;
     float: left;
     position : fixed;
     left : 0px;
@@ -208,11 +208,11 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    height: 40px;
+    height: 50px;
     float: left;
     position : fixed;
     left : 0px;
-    top : 40px;
+    top : 60px;
     width : 100%;
     transition: margin-left .5s;
 }
