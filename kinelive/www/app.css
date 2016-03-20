@@ -276,6 +276,11 @@
     color: #FFA31A;
 }
 
+.home-header{
+    background: url('image/home-background.jpg') no-repeat;
+    background-size: 100%;
+}
+
 .top-buffer { margin-bottom:0px; }
 
 .icon-kinelive-orange {
