@@ -7,7 +7,7 @@ angular.module('service.patientService', []).factory('patientService', [function
 				"lastname" : "ZELLNER",
 				"pathology" : "Lombalgie",
 				"goal" : "Refaire de l'alpinisme.",
-				"email" : "mikep@yahoo.fr",
+				"email" : "pzellner@yahoo.fr",
 				"photo" : "image/patient.png",
 				"gender" : "M",
 				"phone" : "06 22 32 51 17",
