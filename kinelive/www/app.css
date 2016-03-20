@@ -382,3 +382,6 @@ input.form-control {
 .rz-tick-value {
     font-size: 20px !important;
 }
+div .etat {
+    margin-top: 24px;
+}
