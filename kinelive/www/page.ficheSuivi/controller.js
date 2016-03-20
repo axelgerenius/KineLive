@@ -3,7 +3,7 @@ angular.module('page.ficheSuivi').controller('ficheSuiviController', ['$scope', 
     function($scope, $location, popupPainGraphService) {
 
     $scope.criterias = [{type:'Douleur', level: '0'}, {type:'Mobilité', level: '0'}];
-    $scope.exercices = [{}];
+    $scope.exercices = ['Etirement avec ballon de Klein. 3 x séries de 3 minutes tous les jours.'];
 
     $scope.toggleImage = function() {
         popupPainGraphService.openPopup();
@@ -14,7 +14,7 @@ angular.module('page.ficheSuivi').controller('ficheSuiviController', ['$scope', 
     };
 
     $scope.addExercice = function() {
-        $scope.exercices.push({});
+        $scope.exercices.push('');
     };
 
     $scope.doFicheSuiviCreation = function() {
