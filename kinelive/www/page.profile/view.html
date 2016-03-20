@@ -3,64 +3,74 @@
 
 <div class="panel panel-default">
     <div class="panel-body">
+
         <div class="col-xs-12">
             <img src="image/photo-profil.jpg" class="photo-patient-large img-responsive">
         </div>
 
-        <h4 class="title">Sexe</h4>
-        <input type="text" class="form-control" value="Homme" ng-show="patient.gender === 'M'"/>
-        <input type="text" class="form-control" value="Femme" ng-show="patient.gender === 'F'"/>
-
-        <h4 class="title">Nom</h4>
-        <input type="text" class="form-control" value="{{ patient.lastname }}"/>
-
-        <h4 class="title">Prénom</h4>
-        <input type="text" class="form-control" value="{{ patient.firstname }}"/>
-
-        <h4 class="title">Né le</h4>
-        <input type="text" class="form-control" value="{{ patient.birthdate }}"/>
-
-        <h4 class="title">Email</h4>
-        <input type="text" class="form-control" value="{{ patient.email }}"/>
-
-        <h4 class="title">Telephone</h4>
-        <input type="text" class="form-control" value="{{ patient.phone }}"/>
-
-        <h4 class="title">Adresse</h4>
-        <input type="text" class="form-control" value="{{ patient.adress }}"/>
-
-        <div>
-            <h4 class="title">Contexte</h4>
-            <textarea ng-model="patient.context"
-                      type="text"
-                      class="form-control"
-                      rows="2"></textarea>
+        <div class="edit-profile-button">
+            <span class="glyphicon glyphicon-edit icon-kinelive-orange" aria-hidden="true" uib-dropdown-toggle></span>
         </div>
 
-        <div>
-            <h4 class="title">Anamnèse</h4>
-            <textarea ng-model="patient.anamnese"
-                      type="text"
-                      class="form-control"
-                      rows="2"></textarea>
-        </div>
+        <div class="profile-infos">
+            <h4 class="title">Sexe</h4>
+            <input type="text" class="form-control" value="Homme" ng-show="patient.gender === 'M'"/>
+            <input type="text" class="form-control" value="Femme" ng-show="patient.gender === 'F'"/>
 
-        <div class="container container-radios">
-            <div class="row">
-                <div class="col-xs-3">
-                    <a href="#" class="img-radio">
-                        <img src="icone/irm.jpg" alt="irm" class="img-responsive irm">
-                    </a>
-                </div>
-                <div class="col-xs-3">
-                    <a href="#" class="img-radio">
-                        <img src="icone/radio.png" alt="radio" class="img-responsive irm">
-                    </a>
-                </div>
-                <div class="col-xs-3">
-                    <a href="#" class="thumbnail">
-                        <img src="icone/ajouter.png" alt="ajouter" class="img-responsive irm">
-                    </a>
+            <h4 class="title">Nom</h4>
+            <input type="text" class="form-control" value="{{ patient.lastname }}"/>
+
+            <h4 class="title">Prénom</h4>
+            <input type="text" class="form-control" value="{{ patient.firstname }}"/>
+
+            <h4 class="title">Né le</h4>
+            <input type="text" class="form-control" value="{{ patient.birthdate }}"/>
+
+            <h4 class="title">Email</h4>
+            <input type="text" class="form-control" value="{{ patient.email }}"/>
+
+            <h4 class="title">Telephone</h4>
+            <input type="text" class="form-control" value="{{ patient.phone }}"/>
+
+            <h4 class="title">Adresse</h4>
+            <input type="text" class="form-control" value="{{ patient.adress }}"/>
+
+            <div>
+                <h4 class="title">Contexte</h4>
+                <textarea ng-model="patient.context"
+                          type="text"
+                          class="form-control"
+                          rows="2"></textarea>
+            </div>
+
+            <div>
+                <h4 class="title">Anamnèse</h4>
+                <textarea ng-model="patient.anamnese"
+                          type="text"
+                          class="form-control"
+                          rows="2"></textarea>
+            </div>
+
+            <div class="container container-radios">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <a href="#" class="img-radio">
+                            <img src="icone/irm.jpg" alt="irm" class="img-responsive irm">
+                        </a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="#" class="img-radio">
+                            <img src="icone/radio.png" alt="radio" class="img-responsive irm">
+                        </a>
+                    </div>
+                    <div class="col-xs-3">
+                        <div>
+                            <i class="material-icons irm">add</i>
+                        </div>
+                        <a href="#" class="thumbnail">
+                            <img src="icone/ajouter.png" alt="ajouter" class="img-responsive irm">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
