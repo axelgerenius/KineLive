@@ -1,2 +1,2 @@
 
-angular.module('ui.mainComponent.tabBarForm', []);
+angular.module('ui.mainComponent.tabBarForm', ['service.patientService']);

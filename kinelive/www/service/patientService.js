@@ -129,6 +129,20 @@ angular.module('service.patientService', []).factory('patientService', [function
 
 		add : function(patient) {
 			this.patientList.push(patient);
+		},
+
+		addSuiviToPatient : function(id) {
+			for (patient in this.patientList) {
+				if((this.patientList[patient]).id == id) {
+					var seance = {
+						"numero" : "5",
+						"date" : new Date(),
+						"type" : "suivi"
+					};
+					(this.patientList[patient]).seanceList.push(seance);
+					break;
+				}
+			}
 		}
 	};
 }]);

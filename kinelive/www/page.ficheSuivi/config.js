@@ -5,7 +5,7 @@ angular.module('page.ficheSuivi')
 		function($stateProvider, $urlRouterProvider) {
 		
 	$stateProvider.state('ficheSuivi', {
-    	url: "/ficheSuivi",
+    	url: "/ficheSuivi/{id}",
     	templateUrl: 'page.ficheSuivi/view.html',
 		controller : "ficheSuiviController",
 		controllerAs : "ficheSuiviController"
