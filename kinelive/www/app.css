@@ -344,3 +344,15 @@
 .exercice-text {
     margin-top: 10px;
 }
+
+.irm_icons{
+    background-color: #9d9d9d;
+    border-radius: 35%;
+    height: 58px;
+}
+
+.irm_plus{
+    height: 100%;
+    width: 100%;
+
+}

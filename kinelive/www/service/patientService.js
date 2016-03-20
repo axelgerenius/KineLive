@@ -10,10 +10,10 @@ angular.module('service.patientService', []).factory('patientService', [function
 				"email" : "mikep@yahoo.fr",
 				"photo" : "image/patient.png",
 				"gender" : "M",
-				"phone" : "0600000000",
-				"adress" : "California",
-				"context" : "Joueur de batterie amateur.",
-				"anamnese" : "",
+				"phone" : "06 22 32 51 17",
+				"adress" : "16 rue de la paix 67000 Strasbourg",
+				"context" : "Sportif de haute montagne",
+				"anamnese" : "Lombargie aigue entre L4 et L5, 2ième traitement",
 				"birthdate" : "1967-04-20",
 				"criteriaList" : [
 					{
