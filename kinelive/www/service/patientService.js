@@ -131,11 +131,15 @@ angular.module('service.patientService', []).factory('patientService', [function
 			this.patientList.push(patient);
 		},
 
+		lastSeance : function(patient) {
+			return patient.seanceList[patient.seanceList.length - 1].numero;
+		},
+
 		addSuiviToPatient : function(id) {
 			for (patient in this.patientList) {
 				if((this.patientList[patient]).id == id) {
 					var seance = {
-						"numero" : "5",
+						"numero" : (this.lastSeance(this.patientList[patient]) + 1),
 						"date" : new Date(),
 						"type" : "suivi"
 					};
