@@ -332,3 +332,7 @@
 .irm{
     border-radius: 35%;
 }
+
+.button-menu {
+    border: none !important;
+}
