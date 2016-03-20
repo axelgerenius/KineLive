@@ -6,7 +6,7 @@ angular.module('service.patientService', []).factory('patientService', [function
 				"firstname" : "Pascal",
 				"lastname" : "ZELLNER",
 				"pathology" : "Lombalgie",
-				"goal" : "pouvoir à nouveau jouer de la batterie.",
+				"goal" : "Refaire de l'alpinisme.",
 				"email" : "mikep@yahoo.fr",
 				"photo" : "image/patient.png",
 				"gender" : "M",
