@@ -356,9 +356,10 @@
     height: 58px;
 }
 
-.irm_plus{
+.irm_plus {
     height: 100%;
     width: 100%;
+}
 
 .edit-profile-button {
     display: inline-block;
